@@ -1,0 +1,68 @@
+.gallery-container {
+    background-color: rgb(36, 36, 36);
+    padding: 200px 0;
+
+    transform: skewy(3deg); /* angle you want */
+    transform-origin: bottom left;
+   
+}
+
+.gallery-content {
+    position: relative;
+    transform: skewy( -3deg); /* angle you want */
+    transform-origin: bottom left;
+    opacity: 0;
+    left: 100vw;
+}
+
+.gallery-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.gallery-title h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.carousel-item  {
+    height: 100%;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: inherit;
+    width: inherit;
+    max-width: none;
+    max-height: none;
+    min-height: 100%;
+    object-fit: contain
+}
+
+.carousel-indicators button {
+    background-color: #4176c5 !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        padding: 100px 0;
+    }
+
+    .gallery-title {
+        margin: 0;
+        margin-bottom: -100px;
+        
+    }
+
+}

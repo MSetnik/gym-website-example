@@ -1,0 +1,31 @@
+.developer-container {
+    display: flex;
+    height: 30px;
+    background-color:rgb(24, 24, 24);
+
+}
+
+.developer-info-div {
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    align-content: center;
+
+}
+
+.developer-info-div a {
+    color: rgb(211, 210, 210);
+    font-size: 12px;
+    margin: auto 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    .developer-info-div {
+        margin-right: 5px;
+
+    }
+}

@@ -1,0 +1,104 @@
+
+.price-list-container {
+    position: relative;
+    /* overflow: hidden;
+    height: 550px; */
+    transition: height 2s;
+    -moz-transition: height 2s;
+    /* Firefox 4 */
+    -webkit-transition: height 2s;
+    /* Safari and Chrome */
+    -o-transition: height 2s;
+    /* Opera */
+
+    opacity: 0;
+
+    right: 100vw;
+
+
+
+}
+
+.price-all {
+    height: 100% !important;
+    background-color: red;
+    transition: height 1s linear  !important;
+}
+
+.show {
+    height: auto;
+    transition: height 2s;
+    -moz-transition: height 2s;
+    /* Firefox 4 */
+    -webkit-transition: height 2s;
+    /* Safari and Chrome */
+    -o-transition: height 2s;
+    /* Opera */
+}
+
+.hide {
+    height: 500px;
+    transition: height 2s;
+    -moz-transition: height 2s;
+    /* Firefox 4 */
+    -webkit-transition: height 2s;
+    /* Safari and Chrome */
+    -o-transition: height 2s;
+    /* Opera */
+}
+
+.price-list {
+    padding: 200px 0;
+    /* height: 100% !important; */
+    transition: height 1s ease;
+}
+
+
+.price-list-title-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+.price-list-title-div h1{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.row-price-list{
+    display: flex;
+    justify-content: center;
+}
+
+.col-price-list {
+    margin-bottom: 40px;
+    transition: height 1s linear  !important;
+    
+}
+
+.show-more-btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.show-more-btn {
+    color: #4176c5 !important;
+    border-color: #4176c5 !important;
+}
+
+.show-more-btn:hover {
+    background-color: #4176c51c !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .price-list {
+        padding: 100px 0;
+        /* height: 100% !important; */
+        transition: height 1s ease;
+    }
+        
+}

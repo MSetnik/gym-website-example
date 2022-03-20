@@ -1,0 +1,276 @@
+/* animations */
+@keyframes linkBorderWidthAnimSlideIn {
+    from 
+    {
+        width: 0%;
+    }
+    to 
+    {
+        width: 100%;
+    }
+  }
+
+  @keyframes linkBorderWidthAnimSlideOut {
+    from 
+    {
+        width: 100%;
+    }
+    to 
+    {
+        width: 0%;
+    }
+  }
+
+  /* animations */
+@keyframes changeColor {
+    from 
+    {
+       
+    background-color: rgba(0,0,0,0.3);
+    }
+    to 
+    {
+       
+    background-color: black !important;
+    }
+  }
+
+  @keyframes linkBorderWidthAnimSlideOut1 {
+    from 
+    {
+        color:rgba(0,0,0,0.3) !important; 
+        height: 100px;
+    }
+    to 
+    {
+        color:rgba(0,0,0,1) !important;
+        height: 64px;
+
+
+    }
+  }
+
+.sticky {
+    top: 0;
+    height: 64px !important;
+    width: 100%;
+    z-index: 99;
+    transition: height 0.1s ease;
+
+}
+
+.navbar-div{
+    background-color: rgba(0,0,0,1);
+    position: fixed !important;
+    height: 120px;
+    transition: height 0.1s ease;
+    width: 100%;
+
+}
+
+#navbar-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 9;
+    justify-content: space-between;
+
+}
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+
+#logo-container img{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+#logo-container a {
+    height: 100% !important;
+    display: flex;
+}
+
+#links-container{
+    display: flex;
+    justify-content: space-around;
+    flex: 0.55;
+    height: 100%;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16;
+    text-transform: uppercase;
+}
+
+
+.link-border-top {
+    visibility: hidden;
+    height: 2px;
+    width: 0%;
+    background-color: #4176c5;
+    flex-direction: column;
+   
+}
+
+.link-selected{
+    width: 100% !important;
+    background-color: #4176c5 !important;
+   transition: width 1s ease;
+}
+
+.link a {
+    display: flex;
+    flex:1;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.link:hover > .link-border-top {
+  animation-name: linkBorderWidthAnimSlideIn;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.link:not(:hover) > .link-border-top {
+    animation-name: linkBorderWidthAnimSlideOut;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #links-container{
+        display: flex;
+        justify-content: space-around;
+        flex: 0.75;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    #links-container{
+        display: flex;
+        justify-content: space-around;
+        flex: 0.95;
+        height: 100%;
+    }
+
+      
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    #links-container{
+        display: none;
+    }
+
+    .navbar-div {
+        position: relative !important;
+        /* display: flex; */
+        flex:1;
+        width: 100%;
+        height: 56px;
+        flex-direction: column;
+
+    }
+
+    .sticky {
+        position: fixed !important;
+        top: 0;
+        height: 56px !important;
+        width: 100%;
+        z-index: 99;
+
+    }
+
+    #logo-container{
+        display: flex;
+        justify-content: flex-start;
+        flex:1;
+        height: 40px !important;
+        width: 40px !important;
+        aspect-ratio: 1/1;
+        margin-left: 20px;
+    
+    }
+
+    .logo {
+        height: 80%;
+    }
+
+    
+    /* navbar menu */
+    .navbar-menu {
+        background-color: rgb(255, 255, 255);
+        z-index: 99;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        padding: 10px 30px 20px 20px;
+    }
+
+    .navbar-menu-visible {
+        left: 0vw;
+        transition: all 0.5s;
+        visibility: visible;
+
+    }
+
+    .navbar-menu-hidden {
+        left: 100vw;
+        transition: all 0.5s;
+        visibility: hidden;
+    }
+
+    .navbar-menu-close {
+        margin-top: 2px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-menu-content {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-menu-hamburger {
+        margin-right: 20px;
+    }
+
+    .link-nav-menu a{
+        color: #4176c5 !important;
+        margin-bottom: 10px;
+        position: relative;
+        right: -300px;
+        font-size: 24px;
+    }
+
+    .link-nav-menu-visible {
+        right: 0px!important;
+        transition: all .5s ease;
+    }
+    
+}

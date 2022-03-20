@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +44,50 @@
     transform: rotate(360deg);
   }
 }
+
+.slide-in-left-anim {
+  animation: slideInLeft;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+
+}
+
+.slide-in-right-anim {
+  animation: slideInRight;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+
+}
+
+
+
+
+/* animations */
+@keyframes slideInLeft {
+  0% {
+      opacity: 0;
+      right: 100vw ;
+  }
+
+  100% {
+      opacity: 1;
+      right: 0px;
+
+  }
+}
+
+/* animations */
+@keyframes slideInRight{
+  0% {
+    opacity: 0;
+    left: 100vw ;
+}
+
+100% {
+    opacity: 1;
+    left: 0px;
+
+}
+}
+
+

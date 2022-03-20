@@ -1,0 +1,157 @@
+@keyframes contentMarginAdd {
+    from {
+        margin-top: 0px
+    }
+    to {
+        margin-top: 64px
+    }
+}
+
+/* animations */
+@keyframes slideInMainContainer {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+.main-container-animation{
+    /* animation-delay: 2000ms; */
+}
+
+
+.main-container-animation{
+    animation: slideInMainContainer;
+    animation-duration: 2s;
+}
+
+
+.header-container {
+    padding-top: 120px;
+    background-color: black;
+    height: 100vh;
+}
+
+
+.container-background {
+    /* background-color: red; */
+    background-image: url('../../../assets/main-container/main-img.jpeg');
+    /* aspect-ratio: 16/9; */
+    width: 100%;
+    /* height: 950px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    
+    /* margin-top: -100px; */
+    /* transition: margin-top 0.1s ease-in; */
+
+    
+    /* background-color: rgba(0,0,0,0.2); */
+
+}
+
+#overlay {
+    position: inherit; /* Sit on top of the page content */
+    display: flex; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    /* cursor: pointer; Add a pointer on hover */
+  }
+
+.main-container{
+    text-align: center;
+    margin-top: -120px;
+}
+
+#title-city {
+    font-size: 32px;
+    letter-spacing: 12px;
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 12px;
+
+}
+
+#main-title {
+    font-size: 200px;
+    color: #4176c5;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 30px;
+    margin-left: 30px;
+}
+
+.scroll-down-arrow{
+    top: 120px;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        margin-top: -220px;
+        text-align: center;
+    }
+    
+    .header-container {
+        padding-top: 0;
+        background-color: black !important;
+
+
+    }
+
+    .navbar-sticky-margin {
+        padding-top: 56px;
+
+    }
+
+    .container-background {
+    }
+
+    #title-city {
+        font-size: 20px;
+        letter-spacing: 12px;
+        color: rgba(255,255,255,1);
+        font-family: 'Roboto', sans-serif;
+        margin-left: 12px;
+    
+    }
+    
+    #main-title {
+        font-size: 80px;
+        color: #4176c5;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 12px;
+        margin-left: 24px;
+    }
+
+    .scroll-down-arrow {
+        /* position: relative; */
+        top: 120px;
+        display: flex;
+        flex: 1;
+        position: relative;
+    }
+
+   
+    
+    
+
+}

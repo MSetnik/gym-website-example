@@ -1,0 +1,59 @@
+.contact-info-container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.contact-info-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+    flex:1;
+}
+
+.contact-info-details h5 {
+    color:rgb(83, 83, 83);
+    font-size: 16px;
+}
+
+.contact-info-details > :first-child {
+   font-size: 22px;
+}
+
+.contact-info-details > :first-child {
+    color:#4176c5;
+}
+
+.work-hour-div{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.work-hour-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.hours-body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hours-body h5{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-content: flex-start;
+}
